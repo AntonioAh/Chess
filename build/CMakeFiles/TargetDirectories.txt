@@ -1,0 +1,3 @@
+/Users/antonio/Desktop/Scacchi/build/CMakeFiles/Scacchi.dir
+/Users/antonio/Desktop/Scacchi/build/CMakeFiles/edit_cache.dir
+/Users/antonio/Desktop/Scacchi/build/CMakeFiles/rebuild_cache.dir

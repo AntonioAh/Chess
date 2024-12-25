@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/Users/antonio/Desktop/Scacchi/build",
+  "command": "clang++  -I/Users/antonio/Desktop/Scacchi/include -I/Users/antonio/Desktop/Scacchi/include/Pezzi -g -std=gnu++20 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.o -c /Users/antonio/Desktop/Scacchi/src/Pezzi/Alfiere.cpp",
+  "file": "/Users/antonio/Desktop/Scacchi/src/Pezzi/Alfiere.cpp",
+  "output": "CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.o"
+},
+{
+  "directory": "/Users/antonio/Desktop/Scacchi/build",
+  "command": "clang++  -I/Users/antonio/Desktop/Scacchi/include -I/Users/antonio/Desktop/Scacchi/include/Pezzi -g -std=gnu++20 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/Scacchi.dir/src/Pezzi/Cavallo.cpp.o -c /Users/antonio/Desktop/Scacchi/src/Pezzi/Cavallo.cpp",
+  "file": "/Users/antonio/Desktop/Scacchi/src/Pezzi/Cavallo.cpp",
+  "output": "CMakeFiles/Scacchi.dir/src/Pezzi/Cavallo.cpp.o"
+},
+{
+  "directory": "/Users/antonio/Desktop/Scacchi/build",
+  "command": "clang++  -I/Users/antonio/Desktop/Scacchi/include -I/Users/antonio/Desktop/Scacchi/include/Pezzi -g -std=gnu++20 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/Scacchi.dir/src/Pezzi/Pedone.cpp.o -c /Users/antonio/Desktop/Scacchi/src/Pezzi/Pedone.cpp",
+  "file": "/Users/antonio/Desktop/Scacchi/src/Pezzi/Pedone.cpp",
+  "output": "CMakeFiles/Scacchi.dir/src/Pezzi/Pedone.cpp.o"
+},
+{
+  "directory": "/Users/antonio/Desktop/Scacchi/build",
+  "command": "clang++  -I/Users/antonio/Desktop/Scacchi/include -I/Users/antonio/Desktop/Scacchi/include/Pezzi -g -std=gnu++20 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/Scacchi.dir/src/Pezzi/Re.cpp.o -c /Users/antonio/Desktop/Scacchi/src/Pezzi/Re.cpp",
+  "file": "/Users/antonio/Desktop/Scacchi/src/Pezzi/Re.cpp",
+  "output": "CMakeFiles/Scacchi.dir/src/Pezzi/Re.cpp.o"
+},
+{
+  "directory": "/Users/antonio/Desktop/Scacchi/build",
+  "command": "clang++  -I/Users/antonio/Desktop/Scacchi/include -I/Users/antonio/Desktop/Scacchi/include/Pezzi -g -std=gnu++20 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/Scacchi.dir/src/Pezzi/Regina.cpp.o -c /Users/antonio/Desktop/Scacchi/src/Pezzi/Regina.cpp",
+  "file": "/Users/antonio/Desktop/Scacchi/src/Pezzi/Regina.cpp",
+  "output": "CMakeFiles/Scacchi.dir/src/Pezzi/Regina.cpp.o"
+},
+{
+  "directory": "/Users/antonio/Desktop/Scacchi/build",
+  "command": "clang++  -I/Users/antonio/Desktop/Scacchi/include -I/Users/antonio/Desktop/Scacchi/include/Pezzi -g -std=gnu++20 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/Scacchi.dir/src/Pezzi/Torre.cpp.o -c /Users/antonio/Desktop/Scacchi/src/Pezzi/Torre.cpp",
+  "file": "/Users/antonio/Desktop/Scacchi/src/Pezzi/Torre.cpp",
+  "output": "CMakeFiles/Scacchi.dir/src/Pezzi/Torre.cpp.o"
+},
+{
+  "directory": "/Users/antonio/Desktop/Scacchi/build",
+  "command": "clang++  -I/Users/antonio/Desktop/Scacchi/include -I/Users/antonio/Desktop/Scacchi/include/Pezzi -g -std=gnu++20 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/Scacchi.dir/src/Giocatore.cpp.o -c /Users/antonio/Desktop/Scacchi/src/Giocatore.cpp",
+  "file": "/Users/antonio/Desktop/Scacchi/src/Giocatore.cpp",
+  "output": "CMakeFiles/Scacchi.dir/src/Giocatore.cpp.o"
+},
+{
+  "directory": "/Users/antonio/Desktop/Scacchi/build",
+  "command": "clang++  -I/Users/antonio/Desktop/Scacchi/include -I/Users/antonio/Desktop/Scacchi/include/Pezzi -g -std=gnu++20 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/Scacchi.dir/src/Gioco.cpp.o -c /Users/antonio/Desktop/Scacchi/src/Gioco.cpp",
+  "file": "/Users/antonio/Desktop/Scacchi/src/Gioco.cpp",
+  "output": "CMakeFiles/Scacchi.dir/src/Gioco.cpp.o"
+},
+{
+  "directory": "/Users/antonio/Desktop/Scacchi/build",
+  "command": "clang++  -I/Users/antonio/Desktop/Scacchi/include -I/Users/antonio/Desktop/Scacchi/include/Pezzi -g -std=gnu++20 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/Scacchi.dir/src/Pezzo.cpp.o -c /Users/antonio/Desktop/Scacchi/src/Pezzo.cpp",
+  "file": "/Users/antonio/Desktop/Scacchi/src/Pezzo.cpp",
+  "output": "CMakeFiles/Scacchi.dir/src/Pezzo.cpp.o"
+},
+{
+  "directory": "/Users/antonio/Desktop/Scacchi/build",
+  "command": "clang++  -I/Users/antonio/Desktop/Scacchi/include -I/Users/antonio/Desktop/Scacchi/include/Pezzi -g -std=gnu++20 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/Scacchi.dir/src/main.cpp.o -c /Users/antonio/Desktop/Scacchi/src/main.cpp",
+  "file": "/Users/antonio/Desktop/Scacchi/src/main.cpp",
+  "output": "CMakeFiles/Scacchi.dir/src/main.cpp.o"
+}
+]
