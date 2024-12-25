@@ -1,9 +1,10 @@
 #include <iostream>
+#include "../include/Gioco.h"
 
 using namespace std;
 
 int main(int argc, char *argv[]){
-    cout << "ciao\n";
+    Gioco gioco;
 
     return 0;
 }
