@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Scacchi.dir/src/Pezzi/Torre.cpp.o.d"
   "CMakeFiles/Scacchi.dir/src/Pezzo.cpp.o"
   "CMakeFiles/Scacchi.dir/src/Pezzo.cpp.o.d"
+  "CMakeFiles/Scacchi.dir/src/glad.c.o"
+  "CMakeFiles/Scacchi.dir/src/glad.c.o.d"
   "CMakeFiles/Scacchi.dir/src/main.cpp.o"
   "CMakeFiles/Scacchi.dir/src/main.cpp.o.d"
   "Scacchi"
@@ -24,6 +26,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang C CXX)
   include(CMakeFiles/Scacchi.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

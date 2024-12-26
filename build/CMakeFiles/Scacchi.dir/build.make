@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E rm -f
+RM = /opt/homebrew/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -72,10 +72,24 @@ include CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/codegen:
 .PHONY : CMakeFiles/Scacchi.dir/codegen
 
+CMakeFiles/Scacchi.dir/src/glad.c.o: CMakeFiles/Scacchi.dir/flags.make
+CMakeFiles/Scacchi.dir/src/glad.c.o: /Users/antonio/Desktop/Scacchi/src/glad.c
+CMakeFiles/Scacchi.dir/src/glad.c.o: CMakeFiles/Scacchi.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Scacchi.dir/src/glad.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/glad.c.o -MF CMakeFiles/Scacchi.dir/src/glad.c.o.d -o CMakeFiles/Scacchi.dir/src/glad.c.o -c /Users/antonio/Desktop/Scacchi/src/glad.c
+
+CMakeFiles/Scacchi.dir/src/glad.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Scacchi.dir/src/glad.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonio/Desktop/Scacchi/src/glad.c > CMakeFiles/Scacchi.dir/src/glad.c.i
+
+CMakeFiles/Scacchi.dir/src/glad.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Scacchi.dir/src/glad.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonio/Desktop/Scacchi/src/glad.c -o CMakeFiles/Scacchi.dir/src/glad.c.s
+
 CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.o: CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.o: /Users/antonio/Desktop/Scacchi/src/Pezzi/Alfiere.cpp
 CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.o: CMakeFiles/Scacchi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.o"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.o -MF CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.o.d -o CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.o -c /Users/antonio/Desktop/Scacchi/src/Pezzi/Alfiere.cpp
 
 CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.i: cmake_force
@@ -89,7 +103,7 @@ CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.s: cmake_force
 CMakeFiles/Scacchi.dir/src/Pezzi/Cavallo.cpp.o: CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/src/Pezzi/Cavallo.cpp.o: /Users/antonio/Desktop/Scacchi/src/Pezzi/Cavallo.cpp
 CMakeFiles/Scacchi.dir/src/Pezzi/Cavallo.cpp.o: CMakeFiles/Scacchi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Scacchi.dir/src/Pezzi/Cavallo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Scacchi.dir/src/Pezzi/Cavallo.cpp.o"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/Pezzi/Cavallo.cpp.o -MF CMakeFiles/Scacchi.dir/src/Pezzi/Cavallo.cpp.o.d -o CMakeFiles/Scacchi.dir/src/Pezzi/Cavallo.cpp.o -c /Users/antonio/Desktop/Scacchi/src/Pezzi/Cavallo.cpp
 
 CMakeFiles/Scacchi.dir/src/Pezzi/Cavallo.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/Scacchi.dir/src/Pezzi/Cavallo.cpp.s: cmake_force
 CMakeFiles/Scacchi.dir/src/Pezzi/Pedone.cpp.o: CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/src/Pezzi/Pedone.cpp.o: /Users/antonio/Desktop/Scacchi/src/Pezzi/Pedone.cpp
 CMakeFiles/Scacchi.dir/src/Pezzi/Pedone.cpp.o: CMakeFiles/Scacchi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Scacchi.dir/src/Pezzi/Pedone.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Scacchi.dir/src/Pezzi/Pedone.cpp.o"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/Pezzi/Pedone.cpp.o -MF CMakeFiles/Scacchi.dir/src/Pezzi/Pedone.cpp.o.d -o CMakeFiles/Scacchi.dir/src/Pezzi/Pedone.cpp.o -c /Users/antonio/Desktop/Scacchi/src/Pezzi/Pedone.cpp
 
 CMakeFiles/Scacchi.dir/src/Pezzi/Pedone.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/Scacchi.dir/src/Pezzi/Pedone.cpp.s: cmake_force
 CMakeFiles/Scacchi.dir/src/Pezzi/Re.cpp.o: CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/src/Pezzi/Re.cpp.o: /Users/antonio/Desktop/Scacchi/src/Pezzi/Re.cpp
 CMakeFiles/Scacchi.dir/src/Pezzi/Re.cpp.o: CMakeFiles/Scacchi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Scacchi.dir/src/Pezzi/Re.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Scacchi.dir/src/Pezzi/Re.cpp.o"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/Pezzi/Re.cpp.o -MF CMakeFiles/Scacchi.dir/src/Pezzi/Re.cpp.o.d -o CMakeFiles/Scacchi.dir/src/Pezzi/Re.cpp.o -c /Users/antonio/Desktop/Scacchi/src/Pezzi/Re.cpp
 
 CMakeFiles/Scacchi.dir/src/Pezzi/Re.cpp.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/Scacchi.dir/src/Pezzi/Re.cpp.s: cmake_force
 CMakeFiles/Scacchi.dir/src/Pezzi/Regina.cpp.o: CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/src/Pezzi/Regina.cpp.o: /Users/antonio/Desktop/Scacchi/src/Pezzi/Regina.cpp
 CMakeFiles/Scacchi.dir/src/Pezzi/Regina.cpp.o: CMakeFiles/Scacchi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Scacchi.dir/src/Pezzi/Regina.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Scacchi.dir/src/Pezzi/Regina.cpp.o"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/Pezzi/Regina.cpp.o -MF CMakeFiles/Scacchi.dir/src/Pezzi/Regina.cpp.o.d -o CMakeFiles/Scacchi.dir/src/Pezzi/Regina.cpp.o -c /Users/antonio/Desktop/Scacchi/src/Pezzi/Regina.cpp
 
 CMakeFiles/Scacchi.dir/src/Pezzi/Regina.cpp.i: cmake_force
@@ -145,7 +159,7 @@ CMakeFiles/Scacchi.dir/src/Pezzi/Regina.cpp.s: cmake_force
 CMakeFiles/Scacchi.dir/src/Pezzi/Torre.cpp.o: CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/src/Pezzi/Torre.cpp.o: /Users/antonio/Desktop/Scacchi/src/Pezzi/Torre.cpp
 CMakeFiles/Scacchi.dir/src/Pezzi/Torre.cpp.o: CMakeFiles/Scacchi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Scacchi.dir/src/Pezzi/Torre.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Scacchi.dir/src/Pezzi/Torre.cpp.o"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/Pezzi/Torre.cpp.o -MF CMakeFiles/Scacchi.dir/src/Pezzi/Torre.cpp.o.d -o CMakeFiles/Scacchi.dir/src/Pezzi/Torre.cpp.o -c /Users/antonio/Desktop/Scacchi/src/Pezzi/Torre.cpp
 
 CMakeFiles/Scacchi.dir/src/Pezzi/Torre.cpp.i: cmake_force
@@ -159,7 +173,7 @@ CMakeFiles/Scacchi.dir/src/Pezzi/Torre.cpp.s: cmake_force
 CMakeFiles/Scacchi.dir/src/Giocatore.cpp.o: CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/src/Giocatore.cpp.o: /Users/antonio/Desktop/Scacchi/src/Giocatore.cpp
 CMakeFiles/Scacchi.dir/src/Giocatore.cpp.o: CMakeFiles/Scacchi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Scacchi.dir/src/Giocatore.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Scacchi.dir/src/Giocatore.cpp.o"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/Giocatore.cpp.o -MF CMakeFiles/Scacchi.dir/src/Giocatore.cpp.o.d -o CMakeFiles/Scacchi.dir/src/Giocatore.cpp.o -c /Users/antonio/Desktop/Scacchi/src/Giocatore.cpp
 
 CMakeFiles/Scacchi.dir/src/Giocatore.cpp.i: cmake_force
@@ -173,7 +187,7 @@ CMakeFiles/Scacchi.dir/src/Giocatore.cpp.s: cmake_force
 CMakeFiles/Scacchi.dir/src/Gioco.cpp.o: CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/src/Gioco.cpp.o: /Users/antonio/Desktop/Scacchi/src/Gioco.cpp
 CMakeFiles/Scacchi.dir/src/Gioco.cpp.o: CMakeFiles/Scacchi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Scacchi.dir/src/Gioco.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Scacchi.dir/src/Gioco.cpp.o"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/Gioco.cpp.o -MF CMakeFiles/Scacchi.dir/src/Gioco.cpp.o.d -o CMakeFiles/Scacchi.dir/src/Gioco.cpp.o -c /Users/antonio/Desktop/Scacchi/src/Gioco.cpp
 
 CMakeFiles/Scacchi.dir/src/Gioco.cpp.i: cmake_force
@@ -187,7 +201,7 @@ CMakeFiles/Scacchi.dir/src/Gioco.cpp.s: cmake_force
 CMakeFiles/Scacchi.dir/src/Pezzo.cpp.o: CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/src/Pezzo.cpp.o: /Users/antonio/Desktop/Scacchi/src/Pezzo.cpp
 CMakeFiles/Scacchi.dir/src/Pezzo.cpp.o: CMakeFiles/Scacchi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Scacchi.dir/src/Pezzo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Scacchi.dir/src/Pezzo.cpp.o"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/Pezzo.cpp.o -MF CMakeFiles/Scacchi.dir/src/Pezzo.cpp.o.d -o CMakeFiles/Scacchi.dir/src/Pezzo.cpp.o -c /Users/antonio/Desktop/Scacchi/src/Pezzo.cpp
 
 CMakeFiles/Scacchi.dir/src/Pezzo.cpp.i: cmake_force
@@ -201,7 +215,7 @@ CMakeFiles/Scacchi.dir/src/Pezzo.cpp.s: cmake_force
 CMakeFiles/Scacchi.dir/src/main.cpp.o: CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/src/main.cpp.o: /Users/antonio/Desktop/Scacchi/src/main.cpp
 CMakeFiles/Scacchi.dir/src/main.cpp.o: CMakeFiles/Scacchi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Scacchi.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Scacchi.dir/src/main.cpp.o"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/main.cpp.o -MF CMakeFiles/Scacchi.dir/src/main.cpp.o.d -o CMakeFiles/Scacchi.dir/src/main.cpp.o -c /Users/antonio/Desktop/Scacchi/src/main.cpp
 
 CMakeFiles/Scacchi.dir/src/main.cpp.i: cmake_force
@@ -214,6 +228,7 @@ CMakeFiles/Scacchi.dir/src/main.cpp.s: cmake_force
 
 # Object files for target Scacchi
 Scacchi_OBJECTS = \
+"CMakeFiles/Scacchi.dir/src/glad.c.o" \
 "CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.o" \
 "CMakeFiles/Scacchi.dir/src/Pezzi/Cavallo.cpp.o" \
 "CMakeFiles/Scacchi.dir/src/Pezzi/Pedone.cpp.o" \
@@ -228,6 +243,7 @@ Scacchi_OBJECTS = \
 # External object files for target Scacchi
 Scacchi_EXTERNAL_OBJECTS =
 
+Scacchi: CMakeFiles/Scacchi.dir/src/glad.c.o
 Scacchi: CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.o
 Scacchi: CMakeFiles/Scacchi.dir/src/Pezzi/Cavallo.cpp.o
 Scacchi: CMakeFiles/Scacchi.dir/src/Pezzi/Pedone.cpp.o
@@ -239,8 +255,10 @@ Scacchi: CMakeFiles/Scacchi.dir/src/Gioco.cpp.o
 Scacchi: CMakeFiles/Scacchi.dir/src/Pezzo.cpp.o
 Scacchi: CMakeFiles/Scacchi.dir/src/main.cpp.o
 Scacchi: CMakeFiles/Scacchi.dir/build.make
+Scacchi: /opt/homebrew/lib/libglfw.3.4.dylib
+Scacchi: /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/OpenGL.framework
 Scacchi: CMakeFiles/Scacchi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Scacchi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Scacchi"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Scacchi.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

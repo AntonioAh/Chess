@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/antonio/Desktop/Scacchi/src/glad.c" "CMakeFiles/Scacchi.dir/src/glad.c.o" "gcc" "CMakeFiles/Scacchi.dir/src/glad.c.o.d"
   "/Users/antonio/Desktop/Scacchi/src/Giocatore.cpp" "CMakeFiles/Scacchi.dir/src/Giocatore.cpp.o" "gcc" "CMakeFiles/Scacchi.dir/src/Giocatore.cpp.o.d"
   "/Users/antonio/Desktop/Scacchi/src/Gioco.cpp" "CMakeFiles/Scacchi.dir/src/Gioco.cpp.o" "gcc" "CMakeFiles/Scacchi.dir/src/Gioco.cpp.o.d"
   "/Users/antonio/Desktop/Scacchi/src/Pezzi/Alfiere.cpp" "CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.o" "gcc" "CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.o.d"
