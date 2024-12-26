@@ -16,12 +16,13 @@ find_package(GLFW3 3.3 REQUIRED)
 # Add the executable with source files
 file(GLOB PEZZI "src/Pezzi/*.cpp")
 file(GLOB SOURCES "src/*.cpp")
-add_executable(Scacchi ${PEZZI} ${SOURCES})
+file(GLOB PROGRAMMI_C "src/*.c")
+add_executable(Scacchi ${PROGRAMMI_C} ${PEZZI} ${SOURCES})
 
 # Include directories for headers
 include_directories(include include/Pezzi)
 
-target_link_libraries(Scacchi PRIVATE OpenGL::GL glfw)
+target_link_libraries(Scacchi PRIVATE glfw OpenGL::GL)
 
 # Optionally, link external libraries (e.g., Boost or pthread)
 # target_link_libraries(MyProject Boost::Boost)

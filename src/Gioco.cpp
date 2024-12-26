@@ -13,6 +13,7 @@ Gioco::Gioco(){
     nero = std::make_unique<Giocatore>(Colore::NERO);
 
     costruisciScacchiera();
+    aggiungiGrafica();
 
 }
 
@@ -52,3 +53,41 @@ void Gioco::costruisciScacchiera(){
     for (int i = 48; i < 64; i++)
         nero->aggiungiPezzo(scacchiera[i].get());
 }
+
+void Gioco::aggiungiGrafica(){
+    if (!glfwInit()){
+        std::cerr << "errore inizializzazione gradica";
+        return ;
+    }
+
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+
+    #ifdef __APPLE__
+        glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // Required on macOS
+    #endif
+
+
+    // Create a GLFW window
+    GLFWwindow* window = glfwCreateWindow(800, 600, "OpenGL on macOS", nullptr, nullptr);
+    if (!window) {
+        std::cerr << "Failed to create GLFW window" << std::endl;
+        glfwTerminate();
+        return;
+    }
+
+    // Make the window's context current
+    glfwMakeContextCurrent(window);
+    
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
+        std::cerr << "GLAD non inizializzato";
+        return ;
+    }
+
+    
+
+    return;
+}
+
+
