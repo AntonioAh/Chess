@@ -4,14 +4,11 @@
 #include <iostream>
 #include <memory>
 
-#include "glad/glad.h"
-#include <GLFW/glfw3.h>
-
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
 
 #include "Giocatore.h"
+
+#include "resource_manager.h"
+
 
 class Gioco{
     private:
@@ -19,17 +16,15 @@ class Gioco{
         std::unique_ptr<Giocatore> nero;
 
         std::vector<std::unique_ptr<Pezzo>> scacchiera;
-
-
         void costruisciScacchiera();
 
-        void aggiungiGrafica();
-        void disegnaScacchiera(unsigned int shaderProgram, unsigned int VAO);
-        unsigned int CreateShaderProgram();
-        unsigned int createRectangle();
 
     public:
-        Gioco();
+        unsigned int Width, Height;
+
+        Gioco(unsigned int width, unsigned int height);
+        void Init();
+        void Render();
 };
 
 #endif

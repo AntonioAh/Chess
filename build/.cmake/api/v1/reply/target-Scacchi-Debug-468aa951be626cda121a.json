@@ -133,7 +133,12 @@
 				7,
 				8,
 				9,
-				10
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
 			]
 		}
 	],
@@ -189,7 +194,12 @@
 				7,
 				8,
 				9,
-				10
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
 			]
 		}
 	],
@@ -259,6 +269,36 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
 			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "src/resource_manager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "src/shader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "src/sprite_renderer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "src/stb_image.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "src/texture.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

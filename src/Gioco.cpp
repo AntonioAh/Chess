@@ -6,14 +6,13 @@
 #include "Re.h"
 #include "Regina.h"
 
-Gioco::Gioco(){
-    scacchiera.resize(64);
+#include "stb_image.h"
 
-    bianco = std::make_unique<Giocatore>(Colore::BIANCO);
-    nero = std::make_unique<Giocatore>(Colore::NERO);
+#include "sprite_renderer.h"
 
-    costruisciScacchiera();
-    aggiungiGrafica();
+SpriteRenderer *Renderer;
+
+Gioco::Gioco(unsigned int width, unsigned int height) : Width(width), Height(height) {
 
 }
 
@@ -54,40 +53,19 @@ void Gioco::costruisciScacchiera(){
         nero->aggiungiPezzo(scacchiera[i].get());
 }
 
-void Gioco::aggiungiGrafica(){
-    if (!glfwInit()){
-        std::cerr << "errore inizializzazione gradica";
-        return ;
-    }
+void Gioco::Init(){
+    ResourceManager::LoadShader("sprite.vs", "sprite.fs", nullptr, "sprite");
 
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glm::mat4 projection = glm::ortho(0.0f, static_cast<float>(this->Width), static_cast<float>(this->Height), 0.0f, -1.0f, 1.0f);
+    ResourceManager::GetShader("sprite").Use().SetInteger("sprite", 0);
+    ResourceManager::GetShader("sprite").SetMatrix4("projection", projection);
 
-    #ifdef __APPLE__
-        glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // Required on macOS
-    #endif
+    ResourceManager::LoadTexture("resources/board.jpg", false, "background");
 
-
-    // Create a GLFW window
-    GLFWwindow* window = glfwCreateWindow(800, 600, "OpenGL on macOS", nullptr, nullptr);
-    if (!window) {
-        std::cerr << "Failed to create GLFW window" << std::endl;
-        glfwTerminate();
-        return;
-    }
-
-    // Make the window's context current
-    glfwMakeContextCurrent(window);
-    
-    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
-        std::cerr << "GLAD non inizializzato";
-        return ;
-    }
-
-    
-
-    return;
+    Shader s = ResourceManager::GetShader("sprite");
+    Renderer = new SpriteRenderer(s);
 }
 
+void Gioco::Render(){
 
+}

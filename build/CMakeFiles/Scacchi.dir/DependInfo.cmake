@@ -19,6 +19,11 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/antonio/Desktop/Scacchi/src/Pezzi/Torre.cpp" "CMakeFiles/Scacchi.dir/src/Pezzi/Torre.cpp.o" "gcc" "CMakeFiles/Scacchi.dir/src/Pezzi/Torre.cpp.o.d"
   "/Users/antonio/Desktop/Scacchi/src/Pezzo.cpp" "CMakeFiles/Scacchi.dir/src/Pezzo.cpp.o" "gcc" "CMakeFiles/Scacchi.dir/src/Pezzo.cpp.o.d"
   "/Users/antonio/Desktop/Scacchi/src/main.cpp" "CMakeFiles/Scacchi.dir/src/main.cpp.o" "gcc" "CMakeFiles/Scacchi.dir/src/main.cpp.o.d"
+  "/Users/antonio/Desktop/Scacchi/src/resource_manager.cpp" "CMakeFiles/Scacchi.dir/src/resource_manager.cpp.o" "gcc" "CMakeFiles/Scacchi.dir/src/resource_manager.cpp.o.d"
+  "/Users/antonio/Desktop/Scacchi/src/shader.cpp" "CMakeFiles/Scacchi.dir/src/shader.cpp.o" "gcc" "CMakeFiles/Scacchi.dir/src/shader.cpp.o.d"
+  "/Users/antonio/Desktop/Scacchi/src/sprite_renderer.cpp" "CMakeFiles/Scacchi.dir/src/sprite_renderer.cpp.o" "gcc" "CMakeFiles/Scacchi.dir/src/sprite_renderer.cpp.o.d"
+  "/Users/antonio/Desktop/Scacchi/src/stb_image.cpp" "CMakeFiles/Scacchi.dir/src/stb_image.cpp.o" "gcc" "CMakeFiles/Scacchi.dir/src/stb_image.cpp.o.d"
+  "/Users/antonio/Desktop/Scacchi/src/texture.cpp" "CMakeFiles/Scacchi.dir/src/texture.cpp.o" "gcc" "CMakeFiles/Scacchi.dir/src/texture.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -393,6 +393,126 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/resource_manager.o: src/resource_manager.cpp.o
+.PHONY : src/resource_manager.o
+
+# target to build an object file
+src/resource_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/resource_manager.cpp.o
+.PHONY : src/resource_manager.cpp.o
+
+src/resource_manager.i: src/resource_manager.cpp.i
+.PHONY : src/resource_manager.i
+
+# target to preprocess a source file
+src/resource_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/resource_manager.cpp.i
+.PHONY : src/resource_manager.cpp.i
+
+src/resource_manager.s: src/resource_manager.cpp.s
+.PHONY : src/resource_manager.s
+
+# target to generate assembly for a file
+src/resource_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/resource_manager.cpp.s
+.PHONY : src/resource_manager.cpp.s
+
+src/shader.o: src/shader.cpp.o
+.PHONY : src/shader.o
+
+# target to build an object file
+src/shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/shader.cpp.o
+.PHONY : src/shader.cpp.o
+
+src/shader.i: src/shader.cpp.i
+.PHONY : src/shader.i
+
+# target to preprocess a source file
+src/shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/shader.cpp.i
+.PHONY : src/shader.cpp.i
+
+src/shader.s: src/shader.cpp.s
+.PHONY : src/shader.s
+
+# target to generate assembly for a file
+src/shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/shader.cpp.s
+.PHONY : src/shader.cpp.s
+
+src/sprite_renderer.o: src/sprite_renderer.cpp.o
+.PHONY : src/sprite_renderer.o
+
+# target to build an object file
+src/sprite_renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/sprite_renderer.cpp.o
+.PHONY : src/sprite_renderer.cpp.o
+
+src/sprite_renderer.i: src/sprite_renderer.cpp.i
+.PHONY : src/sprite_renderer.i
+
+# target to preprocess a source file
+src/sprite_renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/sprite_renderer.cpp.i
+.PHONY : src/sprite_renderer.cpp.i
+
+src/sprite_renderer.s: src/sprite_renderer.cpp.s
+.PHONY : src/sprite_renderer.s
+
+# target to generate assembly for a file
+src/sprite_renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/sprite_renderer.cpp.s
+.PHONY : src/sprite_renderer.cpp.s
+
+src/stb_image.o: src/stb_image.cpp.o
+.PHONY : src/stb_image.o
+
+# target to build an object file
+src/stb_image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/stb_image.cpp.o
+.PHONY : src/stb_image.cpp.o
+
+src/stb_image.i: src/stb_image.cpp.i
+.PHONY : src/stb_image.i
+
+# target to preprocess a source file
+src/stb_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/stb_image.cpp.i
+.PHONY : src/stb_image.cpp.i
+
+src/stb_image.s: src/stb_image.cpp.s
+.PHONY : src/stb_image.s
+
+# target to generate assembly for a file
+src/stb_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/stb_image.cpp.s
+.PHONY : src/stb_image.cpp.s
+
+src/texture.o: src/texture.cpp.o
+.PHONY : src/texture.o
+
+# target to build an object file
+src/texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/texture.cpp.o
+.PHONY : src/texture.cpp.o
+
+src/texture.i: src/texture.cpp.i
+.PHONY : src/texture.i
+
+# target to preprocess a source file
+src/texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/texture.cpp.i
+.PHONY : src/texture.cpp.i
+
+src/texture.s: src/texture.cpp.s
+.PHONY : src/texture.s
+
+# target to generate assembly for a file
+src/texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/texture.cpp.s
+.PHONY : src/texture.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -435,6 +555,21 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/resource_manager.o"
+	@echo "... src/resource_manager.i"
+	@echo "... src/resource_manager.s"
+	@echo "... src/shader.o"
+	@echo "... src/shader.i"
+	@echo "... src/shader.s"
+	@echo "... src/sprite_renderer.o"
+	@echo "... src/sprite_renderer.i"
+	@echo "... src/sprite_renderer.s"
+	@echo "... src/stb_image.o"
+	@echo "... src/stb_image.i"
+	@echo "... src/stb_image.s"
+	@echo "... src/texture.o"
+	@echo "... src/texture.i"
+	@echo "... src/texture.s"
 .PHONY : help
 
 

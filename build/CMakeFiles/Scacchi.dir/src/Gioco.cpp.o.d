@@ -957,9 +957,16 @@ CMakeFiles/Scacchi.dir/src/Gioco.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__format/formatter_tuple.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/unistd.h \
+  /Users/antonio/Desktop/Scacchi/include/Giocatore.h \
+  /Users/antonio/Desktop/Scacchi/include/Pezzo.h \
+  /Users/antonio/Desktop/Scacchi/include/resource_manager.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/map \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__tree \
   /Users/antonio/Desktop/Scacchi/include/glad/glad.h \
   /Users/antonio/Desktop/Scacchi/include/KHR/khrplatform.h \
-  /opt/homebrew/include/GLFW/glfw3.h /opt/homebrew/include/glm/glm.hpp \
+  /Users/antonio/Desktop/Scacchi/include/texture.h \
+  /Users/antonio/Desktop/Scacchi/include/shader.h \
+  /opt/homebrew/include/glm/glm.hpp \
   /opt/homebrew/include/glm/detail/_fixes.hpp \
   /opt/homebrew/include/glm/detail/setup.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/cassert \
@@ -1147,34 +1154,33 @@ CMakeFiles/Scacchi.dir/src/Gioco.cpp.o: \
   /opt/homebrew/include/glm/vector_relational.hpp \
   /opt/homebrew/include/glm/integer.hpp \
   /opt/homebrew/include/glm/detail/func_integer.inl \
-  /opt/homebrew/include/glm/gtc/matrix_transform.hpp \
-  /opt/homebrew/include/glm/gtc/../mat4x4.hpp \
-  /opt/homebrew/include/glm/gtc/../vec2.hpp \
-  /opt/homebrew/include/glm/gtc/../vec3.hpp \
-  /opt/homebrew/include/glm/gtc/../vec4.hpp \
-  /opt/homebrew/include/glm/gtc/../ext/matrix_projection.hpp \
-  /opt/homebrew/include/glm/gtc/../ext/../gtc/constants.hpp \
-  /opt/homebrew/include/glm/gtc/../ext/../gtc/../ext/scalar_constants.hpp \
-  /opt/homebrew/include/glm/gtc/../ext/../gtc/../ext/../detail/setup.hpp \
-  /opt/homebrew/include/glm/gtc/../ext/../gtc/../ext/scalar_constants.inl \
-  /opt/homebrew/include/glm/gtc/../ext/../gtc/constants.inl \
-  /opt/homebrew/include/glm/gtc/../ext/../geometric.hpp \
-  /opt/homebrew/include/glm/gtc/../ext/../trigonometric.hpp \
-  /opt/homebrew/include/glm/gtc/../ext/../matrix.hpp \
-  /opt/homebrew/include/glm/gtc/../ext/matrix_projection.inl \
-  /opt/homebrew/include/glm/gtc/../ext/matrix_clip_space.hpp \
-  /opt/homebrew/include/glm/gtc/../ext/../ext/scalar_constants.hpp \
-  /opt/homebrew/include/glm/gtc/../ext/matrix_clip_space.inl \
-  /opt/homebrew/include/glm/gtc/../ext/matrix_transform.hpp \
-  /opt/homebrew/include/glm/gtc/../ext/matrix_transform.inl \
-  /opt/homebrew/include/glm/gtc/matrix_transform.inl \
-  /opt/homebrew/include/glm/gtc/../geometric.hpp \
-  /opt/homebrew/include/glm/gtc/../trigonometric.hpp \
-  /opt/homebrew/include/glm/gtc/../matrix.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
   /opt/homebrew/include/glm/gtc/../gtc/quaternion.hpp \
   /opt/homebrew/include/glm/gtc/../gtc/../gtc/constants.hpp \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../ext/scalar_constants.hpp \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../ext/../detail/setup.hpp \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../ext/scalar_constants.inl \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/constants.inl \
   /opt/homebrew/include/glm/gtc/../gtc/../gtc/matrix_transform.hpp \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../mat4x4.hpp \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../vec2.hpp \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../vec3.hpp \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../vec4.hpp \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../ext/matrix_projection.hpp \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../ext/../gtc/constants.hpp \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../ext/../geometric.hpp \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../ext/../trigonometric.hpp \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../ext/../matrix.hpp \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../ext/matrix_projection.inl \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../ext/matrix_clip_space.hpp \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../ext/../ext/scalar_constants.hpp \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../ext/matrix_clip_space.inl \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../ext/matrix_transform.hpp \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../ext/matrix_transform.inl \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/matrix_transform.inl \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../geometric.hpp \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../trigonometric.hpp \
+  /opt/homebrew/include/glm/gtc/../gtc/../gtc/../matrix.hpp \
   /opt/homebrew/include/glm/gtc/../gtc/../ext/vector_relational.hpp \
   /opt/homebrew/include/glm/gtc/../gtc/../ext/../detail/qualifier.hpp \
   /opt/homebrew/include/glm/gtc/../gtc/../ext/vector_relational.inl \
@@ -1250,6 +1256,9 @@ CMakeFiles/Scacchi.dir/src/Gioco.cpp.o: \
   /opt/homebrew/include/glm/gtc/../gtc/../ext/vector_uint1_sized.hpp \
   /opt/homebrew/include/glm/gtc/../gtc/../ext/../ext/vector_uint1.hpp \
   /opt/homebrew/include/glm/gtc/../gtc/../ext/../ext/scalar_uint_sized.hpp \
+  /opt/homebrew/include/glm/gtc/../vec2.hpp \
+  /opt/homebrew/include/glm/gtc/../vec3.hpp \
+  /opt/homebrew/include/glm/gtc/../vec4.hpp \
   /opt/homebrew/include/glm/gtc/../mat2x2.hpp \
   /opt/homebrew/include/glm/gtc/../mat2x3.hpp \
   /opt/homebrew/include/glm/gtc/../mat2x4.hpp \
@@ -1258,12 +1267,14 @@ CMakeFiles/Scacchi.dir/src/Gioco.cpp.o: \
   /opt/homebrew/include/glm/gtc/../mat3x4.hpp \
   /opt/homebrew/include/glm/gtc/../mat4x2.hpp \
   /opt/homebrew/include/glm/gtc/../mat4x3.hpp \
+  /opt/homebrew/include/glm/gtc/../mat4x4.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
-  /Users/antonio/Desktop/Scacchi/include/Giocatore.h \
-  /Users/antonio/Desktop/Scacchi/include/Pezzo.h \
   /Users/antonio/Desktop/Scacchi/include/Pezzi/Pedone.h \
   /Users/antonio/Desktop/Scacchi/include/Pezzi/Torre.h \
   /Users/antonio/Desktop/Scacchi/include/Pezzi/Cavallo.h \
   /Users/antonio/Desktop/Scacchi/include/Pezzi/Alfiere.h \
   /Users/antonio/Desktop/Scacchi/include/Pezzi/Re.h \
-  /Users/antonio/Desktop/Scacchi/include/Pezzi/Regina.h
+  /Users/antonio/Desktop/Scacchi/include/Pezzi/Regina.h \
+  /Users/antonio/Desktop/Scacchi/include/stb_image.h \
+  /Users/antonio/Desktop/Scacchi/include/sprite_renderer.h \
+  /opt/homebrew/include/glm/gtc/matrix_transform.hpp
