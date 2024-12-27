@@ -1277,4 +1277,5 @@ CMakeFiles/Scacchi.dir/src/Gioco.cpp.o: \
   /Users/antonio/Desktop/Scacchi/include/Pezzi/Regina.h \
   /Users/antonio/Desktop/Scacchi/include/stb_image.h \
   /Users/antonio/Desktop/Scacchi/include/sprite_renderer.h \
-  /opt/homebrew/include/glm/gtc/matrix_transform.hpp
+  /opt/homebrew/include/glm/gtc/matrix_transform.hpp \
+  /Users/antonio/Desktop/Scacchi/include/scacchiera.h

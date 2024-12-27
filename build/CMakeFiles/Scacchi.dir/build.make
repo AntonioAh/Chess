@@ -76,15 +76,15 @@ CMakeFiles/Scacchi.dir/src/glad.c.o: CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/src/glad.c.o: /Users/antonio/Desktop/Scacchi/src/glad.c
 CMakeFiles/Scacchi.dir/src/glad.c.o: CMakeFiles/Scacchi.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Scacchi.dir/src/glad.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/glad.c.o -MF CMakeFiles/Scacchi.dir/src/glad.c.o.d -o CMakeFiles/Scacchi.dir/src/glad.c.o -c /Users/antonio/Desktop/Scacchi/src/glad.c
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/glad.c.o -MF CMakeFiles/Scacchi.dir/src/glad.c.o.d -o CMakeFiles/Scacchi.dir/src/glad.c.o -c /Users/antonio/Desktop/Scacchi/src/glad.c
 
 CMakeFiles/Scacchi.dir/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Scacchi.dir/src/glad.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonio/Desktop/Scacchi/src/glad.c > CMakeFiles/Scacchi.dir/src/glad.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonio/Desktop/Scacchi/src/glad.c > CMakeFiles/Scacchi.dir/src/glad.c.i
 
 CMakeFiles/Scacchi.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Scacchi.dir/src/glad.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonio/Desktop/Scacchi/src/glad.c -o CMakeFiles/Scacchi.dir/src/glad.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonio/Desktop/Scacchi/src/glad.c -o CMakeFiles/Scacchi.dir/src/glad.c.s
 
 CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.o: CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.o: /Users/antonio/Desktop/Scacchi/src/Pezzi/Alfiere.cpp
@@ -240,10 +240,24 @@ CMakeFiles/Scacchi.dir/src/resource_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scacchi.dir/src/resource_manager.cpp.s"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antonio/Desktop/Scacchi/src/resource_manager.cpp -o CMakeFiles/Scacchi.dir/src/resource_manager.cpp.s
 
+CMakeFiles/Scacchi.dir/src/scacchiera.cpp.o: CMakeFiles/Scacchi.dir/flags.make
+CMakeFiles/Scacchi.dir/src/scacchiera.cpp.o: /Users/antonio/Desktop/Scacchi/src/scacchiera.cpp
+CMakeFiles/Scacchi.dir/src/scacchiera.cpp.o: CMakeFiles/Scacchi.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Scacchi.dir/src/scacchiera.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/scacchiera.cpp.o -MF CMakeFiles/Scacchi.dir/src/scacchiera.cpp.o.d -o CMakeFiles/Scacchi.dir/src/scacchiera.cpp.o -c /Users/antonio/Desktop/Scacchi/src/scacchiera.cpp
+
+CMakeFiles/Scacchi.dir/src/scacchiera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scacchi.dir/src/scacchiera.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antonio/Desktop/Scacchi/src/scacchiera.cpp > CMakeFiles/Scacchi.dir/src/scacchiera.cpp.i
+
+CMakeFiles/Scacchi.dir/src/scacchiera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scacchi.dir/src/scacchiera.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antonio/Desktop/Scacchi/src/scacchiera.cpp -o CMakeFiles/Scacchi.dir/src/scacchiera.cpp.s
+
 CMakeFiles/Scacchi.dir/src/shader.cpp.o: CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/src/shader.cpp.o: /Users/antonio/Desktop/Scacchi/src/shader.cpp
 CMakeFiles/Scacchi.dir/src/shader.cpp.o: CMakeFiles/Scacchi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Scacchi.dir/src/shader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Scacchi.dir/src/shader.cpp.o"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/shader.cpp.o -MF CMakeFiles/Scacchi.dir/src/shader.cpp.o.d -o CMakeFiles/Scacchi.dir/src/shader.cpp.o -c /Users/antonio/Desktop/Scacchi/src/shader.cpp
 
 CMakeFiles/Scacchi.dir/src/shader.cpp.i: cmake_force
@@ -257,7 +271,7 @@ CMakeFiles/Scacchi.dir/src/shader.cpp.s: cmake_force
 CMakeFiles/Scacchi.dir/src/sprite_renderer.cpp.o: CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/src/sprite_renderer.cpp.o: /Users/antonio/Desktop/Scacchi/src/sprite_renderer.cpp
 CMakeFiles/Scacchi.dir/src/sprite_renderer.cpp.o: CMakeFiles/Scacchi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Scacchi.dir/src/sprite_renderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Scacchi.dir/src/sprite_renderer.cpp.o"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/sprite_renderer.cpp.o -MF CMakeFiles/Scacchi.dir/src/sprite_renderer.cpp.o.d -o CMakeFiles/Scacchi.dir/src/sprite_renderer.cpp.o -c /Users/antonio/Desktop/Scacchi/src/sprite_renderer.cpp
 
 CMakeFiles/Scacchi.dir/src/sprite_renderer.cpp.i: cmake_force
@@ -271,7 +285,7 @@ CMakeFiles/Scacchi.dir/src/sprite_renderer.cpp.s: cmake_force
 CMakeFiles/Scacchi.dir/src/stb_image.cpp.o: CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/src/stb_image.cpp.o: /Users/antonio/Desktop/Scacchi/src/stb_image.cpp
 CMakeFiles/Scacchi.dir/src/stb_image.cpp.o: CMakeFiles/Scacchi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Scacchi.dir/src/stb_image.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Scacchi.dir/src/stb_image.cpp.o"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/stb_image.cpp.o -MF CMakeFiles/Scacchi.dir/src/stb_image.cpp.o.d -o CMakeFiles/Scacchi.dir/src/stb_image.cpp.o -c /Users/antonio/Desktop/Scacchi/src/stb_image.cpp
 
 CMakeFiles/Scacchi.dir/src/stb_image.cpp.i: cmake_force
@@ -285,7 +299,7 @@ CMakeFiles/Scacchi.dir/src/stb_image.cpp.s: cmake_force
 CMakeFiles/Scacchi.dir/src/texture.cpp.o: CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/src/texture.cpp.o: /Users/antonio/Desktop/Scacchi/src/texture.cpp
 CMakeFiles/Scacchi.dir/src/texture.cpp.o: CMakeFiles/Scacchi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Scacchi.dir/src/texture.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Scacchi.dir/src/texture.cpp.o"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/texture.cpp.o -MF CMakeFiles/Scacchi.dir/src/texture.cpp.o.d -o CMakeFiles/Scacchi.dir/src/texture.cpp.o -c /Users/antonio/Desktop/Scacchi/src/texture.cpp
 
 CMakeFiles/Scacchi.dir/src/texture.cpp.i: cmake_force
@@ -310,6 +324,7 @@ Scacchi_OBJECTS = \
 "CMakeFiles/Scacchi.dir/src/Pezzo.cpp.o" \
 "CMakeFiles/Scacchi.dir/src/main.cpp.o" \
 "CMakeFiles/Scacchi.dir/src/resource_manager.cpp.o" \
+"CMakeFiles/Scacchi.dir/src/scacchiera.cpp.o" \
 "CMakeFiles/Scacchi.dir/src/shader.cpp.o" \
 "CMakeFiles/Scacchi.dir/src/sprite_renderer.cpp.o" \
 "CMakeFiles/Scacchi.dir/src/stb_image.cpp.o" \
@@ -330,6 +345,7 @@ Scacchi: CMakeFiles/Scacchi.dir/src/Gioco.cpp.o
 Scacchi: CMakeFiles/Scacchi.dir/src/Pezzo.cpp.o
 Scacchi: CMakeFiles/Scacchi.dir/src/main.cpp.o
 Scacchi: CMakeFiles/Scacchi.dir/src/resource_manager.cpp.o
+Scacchi: CMakeFiles/Scacchi.dir/src/scacchiera.cpp.o
 Scacchi: CMakeFiles/Scacchi.dir/src/shader.cpp.o
 Scacchi: CMakeFiles/Scacchi.dir/src/sprite_renderer.cpp.o
 Scacchi: CMakeFiles/Scacchi.dir/src/stb_image.cpp.o
@@ -338,7 +354,7 @@ Scacchi: CMakeFiles/Scacchi.dir/build.make
 Scacchi: /opt/homebrew/lib/libglfw.3.4.dylib
 Scacchi: /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/OpenGL.framework
 Scacchi: CMakeFiles/Scacchi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable Scacchi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable Scacchi"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Scacchi.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

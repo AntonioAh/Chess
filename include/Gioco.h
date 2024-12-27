@@ -12,11 +12,12 @@
 
 class Gioco{
     private:
-        std::unique_ptr<Giocatore> bianco;
-        std::unique_ptr<Giocatore> nero;
+        // std::unique_ptr<Giocatore> bianco;
+        // std::unique_ptr<Giocatore> nero;
 
-        std::vector<std::unique_ptr<Pezzo>> scacchiera;
-        void costruisciScacchiera();
+        // std::vector<std::unique_ptr<Pezzo>> scacchiera;
+        // void costruisciScacchiera();
+
 
 
     public:

@@ -23,6 +23,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Scacchi.dir/src/main.cpp.o.d"
   "CMakeFiles/Scacchi.dir/src/resource_manager.cpp.o"
   "CMakeFiles/Scacchi.dir/src/resource_manager.cpp.o.d"
+  "CMakeFiles/Scacchi.dir/src/scacchiera.cpp.o"
+  "CMakeFiles/Scacchi.dir/src/scacchiera.cpp.o.d"
   "CMakeFiles/Scacchi.dir/src/shader.cpp.o"
   "CMakeFiles/Scacchi.dir/src/shader.cpp.o.d"
   "CMakeFiles/Scacchi.dir/src/sprite_renderer.cpp.o"

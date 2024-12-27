@@ -40,7 +40,7 @@ int main(int argc, char *argv[]){
     glfwSetKeyCallback(window, key_callback);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
-    glViewport(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+  //  glViewport(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
@@ -52,7 +52,7 @@ int main(int argc, char *argv[]){
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-       game.Render();
+        game.Render();
 
         glfwSwapBuffers(window);
     }

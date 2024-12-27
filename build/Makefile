@@ -417,6 +417,30 @@ src/resource_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/resource_manager.cpp.s
 .PHONY : src/resource_manager.cpp.s
 
+src/scacchiera.o: src/scacchiera.cpp.o
+.PHONY : src/scacchiera.o
+
+# target to build an object file
+src/scacchiera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/scacchiera.cpp.o
+.PHONY : src/scacchiera.cpp.o
+
+src/scacchiera.i: src/scacchiera.cpp.i
+.PHONY : src/scacchiera.i
+
+# target to preprocess a source file
+src/scacchiera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/scacchiera.cpp.i
+.PHONY : src/scacchiera.cpp.i
+
+src/scacchiera.s: src/scacchiera.cpp.s
+.PHONY : src/scacchiera.s
+
+# target to generate assembly for a file
+src/scacchiera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scacchi.dir/build.make CMakeFiles/Scacchi.dir/src/scacchiera.cpp.s
+.PHONY : src/scacchiera.cpp.s
+
 src/shader.o: src/shader.cpp.o
 .PHONY : src/shader.o
 
@@ -558,6 +582,9 @@ help:
 	@echo "... src/resource_manager.o"
 	@echo "... src/resource_manager.i"
 	@echo "... src/resource_manager.s"
+	@echo "... src/scacchiera.o"
+	@echo "... src/scacchiera.i"
+	@echo "... src/scacchiera.s"
 	@echo "... src/shader.o"
 	@echo "... src/shader.i"
 	@echo "... src/shader.s"
