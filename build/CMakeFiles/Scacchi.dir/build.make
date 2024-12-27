@@ -76,15 +76,15 @@ CMakeFiles/Scacchi.dir/src/glad.c.o: CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/src/glad.c.o: /Users/antonio/Desktop/Scacchi/src/glad.c
 CMakeFiles/Scacchi.dir/src/glad.c.o: CMakeFiles/Scacchi.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antonio/Desktop/Scacchi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Scacchi.dir/src/glad.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/glad.c.o -MF CMakeFiles/Scacchi.dir/src/glad.c.o.d -o CMakeFiles/Scacchi.dir/src/glad.c.o -c /Users/antonio/Desktop/Scacchi/src/glad.c
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Scacchi.dir/src/glad.c.o -MF CMakeFiles/Scacchi.dir/src/glad.c.o.d -o CMakeFiles/Scacchi.dir/src/glad.c.o -c /Users/antonio/Desktop/Scacchi/src/glad.c
 
 CMakeFiles/Scacchi.dir/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Scacchi.dir/src/glad.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonio/Desktop/Scacchi/src/glad.c > CMakeFiles/Scacchi.dir/src/glad.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonio/Desktop/Scacchi/src/glad.c > CMakeFiles/Scacchi.dir/src/glad.c.i
 
 CMakeFiles/Scacchi.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Scacchi.dir/src/glad.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonio/Desktop/Scacchi/src/glad.c -o CMakeFiles/Scacchi.dir/src/glad.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonio/Desktop/Scacchi/src/glad.c -o CMakeFiles/Scacchi.dir/src/glad.c.s
 
 CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.o: CMakeFiles/Scacchi.dir/flags.make
 CMakeFiles/Scacchi.dir/src/Pezzi/Alfiere.cpp.o: /Users/antonio/Desktop/Scacchi/src/Pezzi/Alfiere.cpp

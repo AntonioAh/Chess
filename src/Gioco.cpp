@@ -54,18 +54,19 @@ void Gioco::costruisciScacchiera(){
 }
 
 void Gioco::Init(){
-    ResourceManager::LoadShader("sprite.vs", "sprite.fs", nullptr, "sprite");
+    ResourceManager::LoadShader("../src/sprite.vs", "../src/sprite.fs", nullptr, "sprite");
 
     glm::mat4 projection = glm::ortho(0.0f, static_cast<float>(this->Width), static_cast<float>(this->Height), 0.0f, -1.0f, 1.0f);
     ResourceManager::GetShader("sprite").Use().SetInteger("sprite", 0);
     ResourceManager::GetShader("sprite").SetMatrix4("projection", projection);
 
-    ResourceManager::LoadTexture("resources/board.jpg", false, "background");
+    ResourceManager::LoadTexture("../resources/board.jpg", false, "background");
 
     Shader s = ResourceManager::GetShader("sprite");
     Renderer = new SpriteRenderer(s);
 }
 
 void Gioco::Render(){
-
+    Texture2D textureSfondo = ResourceManager::GetTexture("background");
+    Renderer->DrawSprite(textureSfondo, glm::vec2(0.0f, 0.0f), glm::vec2(this->Width, this->Height), 0.0f);
 }
