@@ -59,26 +59,26 @@ Gioco::Gioco(unsigned int width, unsigned int height) : Width(width), Height(hei
 
 
 void Gioco::Init(){
-    // ResourceManager::LoadShader("../src/sprite.vs", "../src/sprite.fs", nullptr, "sprite");
+    ResourceManager::LoadShader("../src/sprite.vs", "../src/sprite.fs", nullptr, "sprite");
     ResourceManager::LoadShader("../src/scacchiera.vs", "../src/scacchiera.fs", nullptr, "scacchiera");
 
     glm::mat4 projection = glm::ortho(0.0f, static_cast<float>(this->Width), static_cast<float>(this->Height), 0.0f, -1.0f, 1.0f);
     ResourceManager::GetShader("scacchiera").Use().SetMatrix4("projection", projection);
-    // ResourceManager::GetShader("sprite").Use().SetInteger("sprite", 0);
-    // ResourceManager::GetShader("sprite").SetMatrix4("projection", projection);
+    ResourceManager::GetShader("sprite").Use().SetInteger("sprite", 0);
+    ResourceManager::GetShader("sprite").SetMatrix4("projection", projection);
 
-    // ResourceManager::LoadTexture("../resources/board.jpg", false, "background");
+    ResourceManager::LoadTexture("../resources/board.jpg", false, "pedone");
 
-    // Shader s = ResourceManager::GetShader("sprite");
-    // Renderer = new SpriteRenderer(s);
-
-    Shader scacchieraShader = ResourceManager::GetShader("scacchiera");
-    scacchiera = new Scacchiera(scacchieraShader, Width);
+    Renderer = new SpriteRenderer(ResourceManager::GetShader("sprite"));
+    scacchiera = new Scacchiera(ResourceManager::GetShader("scacchiera"), Width);
 }
 
-void Gioco::Render(){
-    // Texture2D textureSfondo = ResourceManager::GetTexture("background");
-    // Renderer->DrawSprite(textureSfondo, glm::vec2(0.0f, 0.0f), glm::vec2(this->Width, this->Height), 0.0f);
-    
+void Gioco::Render(){    
     scacchiera->Render();
+
+    for (auto &p : scacchiera->pezzi){
+        if (p.get()){
+            Renderer->DrawSprite(p.get()->texture, glm::vec2(p.get()->colonna * 100, p.get()->riga * 100), glm::vec2(100, 100));
+        }
+    }
 }

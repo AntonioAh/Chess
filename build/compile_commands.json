@@ -73,6 +73,12 @@
 },
 {
   "directory": "/Users/antonio/Desktop/Scacchi/build",
+  "command": "clang++  -I/Users/antonio/Desktop/Scacchi/include -I/Users/antonio/Desktop/Scacchi/include/Pezzi -isystem /opt/homebrew/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Scacchi.dir/src/scacchiera.cpp.o -c /Users/antonio/Desktop/Scacchi/src/scacchiera.cpp",
+  "file": "/Users/antonio/Desktop/Scacchi/src/scacchiera.cpp",
+  "output": "CMakeFiles/Scacchi.dir/src/scacchiera.cpp.o"
+},
+{
+  "directory": "/Users/antonio/Desktop/Scacchi/build",
   "command": "clang++  -I/Users/antonio/Desktop/Scacchi/include -I/Users/antonio/Desktop/Scacchi/include/Pezzi -isystem /opt/homebrew/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Scacchi.dir/src/shader.cpp.o -c /Users/antonio/Desktop/Scacchi/src/shader.cpp",
   "file": "/Users/antonio/Desktop/Scacchi/src/shader.cpp",
   "output": "CMakeFiles/Scacchi.dir/src/shader.cpp.o"

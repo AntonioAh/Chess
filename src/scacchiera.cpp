@@ -1,5 +1,7 @@
 #include "scacchiera.h"
 
+#include <Pzz.h>
+
 Scacchiera::Scacchiera(Shader &shader, unsigned int lato_schermo) : lato_schermo(lato_schermo){
     this->shader = shader;
     const float lato = lato_schermo / 8.0f;
@@ -60,6 +62,8 @@ Scacchiera::Scacchiera(Shader &shader, unsigned int lato_schermo) : lato_schermo
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
 
+    aggiungiPezzi();
+
 }
 
 Scacchiera::~Scacchiera(){
@@ -71,5 +75,34 @@ void Scacchiera::Render(){
 
     glBindVertexArray(VAO);
     glDrawArrays(GL_TRIANGLES, 0, 32 * 6);
+}
 
+void Scacchiera::aggiungiPezzi(){
+    bianco = std::make_unique<Giocatore>(Colore::BIANCO);
+    nero = std::make_unique<Giocatore>(Colore::NERO);
+
+    pezzi.resize(64);
+
+    for (int i = 0; i < 8; i++){
+        pezzi[8 + i] = std::make_unique<Pedone>(bianco.get(), 1, i, ResourceManager::GetTexture("pedone"));
+        pezzi[48 + i] = std::make_unique<Pedone>(nero.get(), 6, i, ResourceManager::GetTexture("pedone"));
+    }
+
+    pezzi[0] = std::make_unique<Torre>(bianco.get(), 0, 0, ResourceManager::GetTexture("pedone"));
+    pezzi[1] = std::make_unique<Cavallo>(bianco.get(), 0, 1, ResourceManager::GetTexture("pedone"));
+    pezzi[2] = std::make_unique<Alfiere>(bianco.get(), 0, 2, ResourceManager::GetTexture("pedone"));
+    pezzi[3] = std::make_unique<Regina>(bianco.get(), 0, 3, ResourceManager::GetTexture("pedone"));
+    pezzi[4] = std::make_unique<Re>(bianco.get(), 0, 4, ResourceManager::GetTexture("pedone"));
+    pezzi[5] = std::make_unique<Alfiere>(bianco.get(), 0, 5, ResourceManager::GetTexture("pedone"));
+    pezzi[6] = std::make_unique<Cavallo>(bianco.get(), 0, 6, ResourceManager::GetTexture("pedone"));
+    pezzi[7] = std::make_unique<Torre>(bianco.get(), 0, 7, ResourceManager::GetTexture("pedone"));
+
+    pezzi[56] = std::make_unique<Torre>(nero.get(), 7, 0, ResourceManager::GetTexture("pedone"));
+    pezzi[57] = std::make_unique<Cavallo>(nero.get(), 7, 1, ResourceManager::GetTexture("pedone"));
+    pezzi[58] = std::make_unique<Alfiere>(nero.get(), 7, 2, ResourceManager::GetTexture("pedone"));
+    pezzi[59] = std::make_unique<Regina>(nero.get(), 7, 3, ResourceManager::GetTexture("pedone"));
+    pezzi[60] = std::make_unique<Re>(nero.get(), 7, 4, ResourceManager::GetTexture("pedone"));
+    pezzi[61] = std::make_unique<Alfiere>(nero.get(), 7, 5, ResourceManager::GetTexture("pedone"));
+    pezzi[62] = std::make_unique<Cavallo>(nero.get(), 7, 6, ResourceManager::GetTexture("pedone"));
+    pezzi[63] = std::make_unique<Torre>(nero.get(), 7, 7, ResourceManager::GetTexture("pedone"));
 }

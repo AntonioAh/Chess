@@ -7,7 +7,7 @@ class Cavallo : public Pezzo{
 
 
     public:
-        Cavallo(Giocatore *giocatore, int riga, int colonna);
+        Cavallo(Giocatore *giocatore, int riga, int colonna, Texture2D &texture);
 };
 
 #endif

@@ -7,7 +7,7 @@ class Torre : public Pezzo{
 
 
     public:
-        Torre(Giocatore *giocatore, int riga, int colonna);
+        Torre(Giocatore *giocatore, int riga, int colonna, Texture2D &texture);
 };
 
 #endif

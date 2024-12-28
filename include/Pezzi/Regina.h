@@ -7,7 +7,7 @@ class Regina : public Pezzo{
 
 
     public:
-        Regina(Giocatore *giocatore, int riga, int colonna);
+        Regina(Giocatore *giocatore, int riga, int colonna, Texture2D &texture);
 };
 
 

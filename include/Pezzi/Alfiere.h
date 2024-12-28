@@ -7,7 +7,7 @@ class Alfiere : public Pezzo{
 
 
     public:
-        Alfiere(Giocatore *giocatore, int riga, int colonna);
+        Alfiere(Giocatore *giocatore, int riga, int colonna, Texture2D &texture);
 };
 
 

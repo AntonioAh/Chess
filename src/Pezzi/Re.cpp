@@ -1,6 +1,6 @@
 #include "Re.h"
 
 
-Re::Re(Giocatore *giocatore, int riga, int colonna) : Pezzo(giocatore, -1, riga, colonna){
+Re::Re(Giocatore *giocatore, int riga, int colonna, Texture2D &texture) : Pezzo(giocatore, 0, riga, colonna, texture){
 
 }

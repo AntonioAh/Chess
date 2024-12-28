@@ -6,7 +6,7 @@
 class Pedone : public Pezzo{
     
     public:
-        Pedone(Giocatore *giocatore, int riga, int colonna);
+        Pedone(Giocatore *giocatore, int riga, int colonna, Texture2D &texture);
 };
 
 #endif

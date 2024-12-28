@@ -959,12 +959,12 @@ CMakeFiles/Scacchi.dir/src/Gioco.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/unistd.h \
   /Users/antonio/Desktop/Scacchi/include/Giocatore.h \
   /Users/antonio/Desktop/Scacchi/include/Pezzo.h \
+  /Users/antonio/Desktop/Scacchi/include/texture.h \
+  /Users/antonio/Desktop/Scacchi/include/glad/glad.h \
+  /Users/antonio/Desktop/Scacchi/include/KHR/khrplatform.h \
   /Users/antonio/Desktop/Scacchi/include/resource_manager.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__tree \
-  /Users/antonio/Desktop/Scacchi/include/glad/glad.h \
-  /Users/antonio/Desktop/Scacchi/include/KHR/khrplatform.h \
-  /Users/antonio/Desktop/Scacchi/include/texture.h \
   /Users/antonio/Desktop/Scacchi/include/shader.h \
   /opt/homebrew/include/glm/glm.hpp \
   /opt/homebrew/include/glm/detail/_fixes.hpp \
@@ -1269,6 +1269,7 @@ CMakeFiles/Scacchi.dir/src/Gioco.cpp.o: \
   /opt/homebrew/include/glm/gtc/../mat4x3.hpp \
   /opt/homebrew/include/glm/gtc/../mat4x4.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/gtc/matrix_transform.hpp \
   /Users/antonio/Desktop/Scacchi/include/Pezzi/Pedone.h \
   /Users/antonio/Desktop/Scacchi/include/Pezzi/Torre.h \
   /Users/antonio/Desktop/Scacchi/include/Pezzi/Cavallo.h \
@@ -1277,5 +1278,4 @@ CMakeFiles/Scacchi.dir/src/Gioco.cpp.o: \
   /Users/antonio/Desktop/Scacchi/include/Pezzi/Regina.h \
   /Users/antonio/Desktop/Scacchi/include/stb_image.h \
   /Users/antonio/Desktop/Scacchi/include/sprite_renderer.h \
-  /opt/homebrew/include/glm/gtc/matrix_transform.hpp \
   /Users/antonio/Desktop/Scacchi/include/scacchiera.h
