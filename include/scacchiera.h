@@ -27,8 +27,7 @@ class Scacchiera{
         std::unique_ptr<Pezzo>& getPezzo(int riga, int colonna);
         std::vector<std::unique_ptr<Pezzo>>& getAllPieces();
 
-        static void mangia(std::unique_ptr<Pezzo> &primo, std::unique_ptr<Pezzo> &secondo);
-        static void avanza(std::unique_ptr<Pezzo> &pezzo, std::unique_ptr<Pezzo> &vuoto, int nuovaRiga, int nuovaColonna);
+        void muovi(std::unique_ptr<Pezzo> &pezzo, std::unique_ptr<Pezzo> &other, int, int);
 
     private:
         unsigned int lato_schermo;
@@ -37,6 +36,7 @@ class Scacchiera{
         float *vertices;
 
         std::vector<std::unique_ptr<Pezzo>> pezzi;
+        static int getIndice(int riga, int colonna);
 
 
         void aggiungiPezzi();

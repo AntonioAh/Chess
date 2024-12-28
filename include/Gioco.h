@@ -34,7 +34,7 @@ class Gioco{
         void Render();
 
         std::unique_ptr<Scacchiera> scacchiera;
-        Giocatore *turno;
+        Colore turno;
         void Muovi();
 
 };

@@ -85,11 +85,11 @@ void Scacchiera::aggiungiPezzi(){
     pezzi.resize(64);
 
     for (int i = 0; i < 8; i++){
-        pezzi[48 + i] = std::make_unique<Pedone>(bianco.get(), 6, i, ResourceManager::GetTexture("pedone"));
+        pezzi[48 + i] = std::make_unique<Pedone>(bianco.get(), 6, i, ResourceManager::GetTexture("torre_bianca"));
         pezzi[8 + i] = std::make_unique<Pedone>(nero.get(), 1, i, ResourceManager::GetTexture("pedone"));
     }
 
-    pezzi[56] = std::make_unique<Torre>(bianco.get(), 7, 0, ResourceManager::GetTexture("torre_bianca"));
+    pezzi[56] = std::make_unique<Torre>(bianco.get(), 7, 0, ResourceManager::GetTexture("pedone"));
     pezzi[57] = std::make_unique<Cavallo>(bianco.get(), 7, 1, ResourceManager::GetTexture("pedone"));
     pezzi[58] = std::make_unique<Alfiere>(bianco.get(), 7, 2, ResourceManager::GetTexture("pedone"));
     pezzi[59] = std::make_unique<Regina>(bianco.get(), 7, 3, ResourceManager::GetTexture("pedone"));
@@ -116,24 +116,23 @@ std::vector<std::unique_ptr<Pezzo>>& Scacchiera::getAllPieces(){
     return pezzi;
 }
 
-void Scacchiera::mangia(std::unique_ptr<Pezzo> &primo, std::unique_ptr<Pezzo> &secondo){
-    int r = primo->riga, c = primo->colonna;
+void Scacchiera::muovi(std::unique_ptr<Pezzo> &pezzo, std::unique_ptr<Pezzo> &other, int nuovaRiga, int nuovaColonna){
 
-    std ::cout << "uno\n";
+    if (other.get() == nullptr){
+        pezzo->riga = nuovaRiga;
+        pezzo->colonna = nuovaColonna; 
+    }
+    else{
+        pezzo->riga = nuovaRiga;
+        pezzo->colonna = nuovaColonna;
 
-    primo->riga = secondo->riga;
-    primo->colonna = secondo->colonna;
+        other.reset();
 
-    secondo->riga = r;
-    secondo->colonna = c;
+    }
 
-    
-    std::swap(primo, secondo);
+    std::swap(pezzo, other);
 }
 
-void Scacchiera::avanza(std::unique_ptr<Pezzo> &pezzo, std::unique_ptr<Pezzo> &vuoto, int nuovaRiga, int nuovaColonna){
-    pezzo->riga = nuovaRiga;
-    pezzo->colonna = nuovaColonna;
-
-    std::swap(pezzo, vuoto);
+int Scacchiera::getIndice(int riga, int colonna){
+    return riga * 8 + colonna;
 }

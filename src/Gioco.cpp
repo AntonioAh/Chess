@@ -74,7 +74,7 @@ void Gioco::Init(){
 
     Renderer = new SpriteRenderer(ResourceManager::GetShader("sprite"));
     scacchiera = std::make_unique<Scacchiera>(ResourceManager::GetShader("scacchiera"), Width);
-    turno = scacchiera->bianco.get();
+    turno = Colore::BIANCO;
 }
 
 void Gioco::Render(){    
@@ -91,11 +91,14 @@ void Gioco::Muovi(){
     Pezzo *partenza = scacchiera->getPezzo(rigaPartenza, colonnaPartenza).get();
    // Pezzo *arrivo = scacchiera->pezzi[rigaArrivo * 8 + colonnaArrivo].get();
 
-    if (partenza == nullptr || partenza->giocatore != turno){
+    if (partenza == nullptr || partenza->giocatore->getColore() != turno){
         return ;
     }
 
     bool valido = partenza->muoviPezzo(scacchiera, rigaArrivo, colonnaArrivo);
+    if (valido){
+        turno = turno == Colore::BIANCO ? Colore::NERO : Colore::BIANCO;
+    }
 
     int a = 0;
 

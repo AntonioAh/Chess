@@ -92,7 +92,7 @@ void mouse_callback(GLFWwindow* window, int button, int action, int mode){
             game.colonnaPartenza = xPos / game.lato;
         }
         else{
-            cout << game.rigaPartenza << " " << game.colonnaPartenza << "\n";
+            // cout << game.rigaPartenza << " " << game.colonnaPartenza << "\n";
             game.selezionato = false;
 
             game.rigaArrivo = yPos / game.lato;
