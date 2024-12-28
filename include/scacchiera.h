@@ -24,8 +24,11 @@ class Scacchiera{
         std::unique_ptr<Giocatore> bianco;
         std::unique_ptr<Giocatore> nero;
 
-        std::shared_ptr<Pezzo>& getPezzo(int riga, int colonna);
-        std::vector<std::shared_ptr<Pezzo>>& getAllPieces();
+        std::unique_ptr<Pezzo>& getPezzo(int riga, int colonna);
+        std::vector<std::unique_ptr<Pezzo>>& getAllPieces();
+
+        static void mangia(std::unique_ptr<Pezzo> &primo, std::unique_ptr<Pezzo> &secondo);
+        static void avanza(std::unique_ptr<Pezzo> &pezzo, std::unique_ptr<Pezzo> &vuoto, int nuovaRiga, int nuovaColonna);
 
     private:
         unsigned int lato_schermo;
@@ -33,7 +36,7 @@ class Scacchiera{
         Shader shader;
         float *vertices;
 
-        std::vector<std::shared_ptr<Pezzo>> pezzi;
+        std::vector<std::unique_ptr<Pezzo>> pezzi;
 
 
         void aggiungiPezzi();

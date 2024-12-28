@@ -85,33 +85,55 @@ void Scacchiera::aggiungiPezzi(){
     pezzi.resize(64);
 
     for (int i = 0; i < 8; i++){
-        pezzi[8 + i] = std::make_unique<Pedone>(bianco.get(), 6, i, ResourceManager::GetTexture("pedone"));
-        pezzi[48 + i] = std::make_unique<Pedone>(nero.get(), 1, i, ResourceManager::GetTexture("pedone"));
+        pezzi[48 + i] = std::make_unique<Pedone>(bianco.get(), 6, i, ResourceManager::GetTexture("pedone"));
+        pezzi[8 + i] = std::make_unique<Pedone>(nero.get(), 1, i, ResourceManager::GetTexture("pedone"));
     }
 
-    pezzi[0] = std::make_unique<Torre>(bianco.get(), 7, 0, ResourceManager::GetTexture("torre_bianca"));
-    pezzi[1] = std::make_unique<Cavallo>(bianco.get(), 7, 1, ResourceManager::GetTexture("pedone"));
-    pezzi[2] = std::make_unique<Alfiere>(bianco.get(), 7, 2, ResourceManager::GetTexture("pedone"));
-    pezzi[3] = std::make_unique<Regina>(bianco.get(), 7, 3, ResourceManager::GetTexture("pedone"));
-    pezzi[4] = std::make_unique<Re>(bianco.get(), 7, 4, ResourceManager::GetTexture("pedone"));
-    pezzi[5] = std::make_unique<Alfiere>(bianco.get(), 7, 5, ResourceManager::GetTexture("pedone"));
-    pezzi[6] = std::make_unique<Cavallo>(bianco.get(), 7, 6, ResourceManager::GetTexture("pedone"));
-    pezzi[7] = std::make_unique<Torre>(bianco.get(), 7, 7, ResourceManager::GetTexture("torre_bianca"));
+    pezzi[56] = std::make_unique<Torre>(bianco.get(), 7, 0, ResourceManager::GetTexture("torre_bianca"));
+    pezzi[57] = std::make_unique<Cavallo>(bianco.get(), 7, 1, ResourceManager::GetTexture("pedone"));
+    pezzi[58] = std::make_unique<Alfiere>(bianco.get(), 7, 2, ResourceManager::GetTexture("pedone"));
+    pezzi[59] = std::make_unique<Regina>(bianco.get(), 7, 3, ResourceManager::GetTexture("pedone"));
+    pezzi[60] = std::make_unique<Re>(bianco.get(), 7, 4, ResourceManager::GetTexture("pedone"));
+    pezzi[61] = std::make_unique<Alfiere>(bianco.get(), 7, 5, ResourceManager::GetTexture("pedone"));
+    pezzi[62] = std::make_unique<Cavallo>(bianco.get(), 7, 6, ResourceManager::GetTexture("pedone"));
+    pezzi[63] = std::make_unique<Torre>(bianco.get(), 7, 7, ResourceManager::GetTexture("pedone"));
 
-    pezzi[56] = std::make_unique<Torre>(nero.get(), 0, 0, ResourceManager::GetTexture("pedone"));
-    pezzi[57] = std::make_unique<Cavallo>(nero.get(), 0, 1, ResourceManager::GetTexture("pedone"));
-    pezzi[58] = std::make_unique<Alfiere>(nero.get(), 0, 2, ResourceManager::GetTexture("pedone"));
-    pezzi[59] = std::make_unique<Regina>(nero.get(), 0, 3, ResourceManager::GetTexture("pedone"));
-    pezzi[60] = std::make_unique<Re>(nero.get(), 0, 4, ResourceManager::GetTexture("pedone"));
-    pezzi[61] = std::make_unique<Alfiere>(nero.get(), 0, 5, ResourceManager::GetTexture("pedone"));
-    pezzi[62] = std::make_unique<Cavallo>(nero.get(), 0, 6, ResourceManager::GetTexture("pedone"));
-    pezzi[63] = std::make_unique<Torre>(nero.get(), 0, 7, ResourceManager::GetTexture("pedone"));
+    pezzi[0] = std::make_unique<Torre>(nero.get(), 0, 0, ResourceManager::GetTexture("pedone"));
+    pezzi[1] = std::make_unique<Cavallo>(nero.get(), 0, 1, ResourceManager::GetTexture("pedone"));
+    pezzi[2] = std::make_unique<Alfiere>(nero.get(), 0, 2, ResourceManager::GetTexture("pedone"));
+    pezzi[3] = std::make_unique<Regina>(nero.get(), 0, 3, ResourceManager::GetTexture("pedone"));
+    pezzi[4] = std::make_unique<Re>(nero.get(), 0, 4, ResourceManager::GetTexture("pedone"));
+    pezzi[5] = std::make_unique<Alfiere>(nero.get(), 0, 5, ResourceManager::GetTexture("pedone"));
+    pezzi[6] = std::make_unique<Cavallo>(nero.get(), 0, 6, ResourceManager::GetTexture("pedone"));
+    pezzi[7] = std::make_unique<Torre>(nero.get(), 0, 7, ResourceManager::GetTexture("pedone"));
 }
 
-std::shared_ptr<Pezzo>& Scacchiera::getPezzo(int riga, int colonna){
+std::unique_ptr<Pezzo>& Scacchiera::getPezzo(int riga, int colonna){
     return pezzi[riga * 8 + colonna];
 }
 
-std::vector<std::shared_ptr<Pezzo>>& Scacchiera::getAllPieces(){
+std::vector<std::unique_ptr<Pezzo>>& Scacchiera::getAllPieces(){
     return pezzi;
+}
+
+void Scacchiera::mangia(std::unique_ptr<Pezzo> &primo, std::unique_ptr<Pezzo> &secondo){
+    int r = primo->riga, c = primo->colonna;
+
+    std ::cout << "uno\n";
+
+    primo->riga = secondo->riga;
+    primo->colonna = secondo->colonna;
+
+    secondo->riga = r;
+    secondo->colonna = c;
+
+    
+    std::swap(primo, secondo);
+}
+
+void Scacchiera::avanza(std::unique_ptr<Pezzo> &pezzo, std::unique_ptr<Pezzo> &vuoto, int nuovaRiga, int nuovaColonna){
+    pezzo->riga = nuovaRiga;
+    pezzo->colonna = nuovaColonna;
+
+    std::swap(pezzo, vuoto);
 }

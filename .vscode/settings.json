@@ -59,6 +59,8 @@
         "vector": "cpp",
         "algorithm": "cpp",
         "glad.h": "c",
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "__tree": "cpp",
+        "map": "cpp"
     }
 }
