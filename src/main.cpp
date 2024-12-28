@@ -9,6 +9,7 @@ using namespace std;
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
+void mouse_callback(GLFWwindow* window, int button, int action, int mode);
 
 const unsigned int SCREEN_WIDTH = 800;
 const unsigned int SCREEN_HEIGHT = 800;
@@ -38,6 +39,7 @@ int main(int argc, char *argv[]){
     }
 
     glfwSetKeyCallback(window, key_callback);
+    glfwSetMouseButtonCallback(window, mouse_callback);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
   //  glViewport(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
@@ -49,7 +51,7 @@ int main(int argc, char *argv[]){
     while (!glfwWindowShouldClose(window)){
         glfwPollEvents();
 
-        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+        glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
         game.Render();
@@ -75,4 +77,27 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     // when a user presses the escape key, we set the WindowShouldClose property to true, closing the application
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
+    
+}
+
+void mouse_callback(GLFWwindow* window, int button, int action, int mode){
+    if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS){
+        double xPos, yPos;
+        glfwGetCursorPos(window, &xPos, &yPos);
+
+        if (game.selezionato == false){
+            game.selezionato = true;
+
+            game.rigaPartenza = yPos / game.lato;
+            game.colonnaPartenza = xPos / game.lato;
+        }
+        else{
+            game.selezionato = false;
+
+            game.rigaArrivo = yPos / game.lato;
+            game.colonnaArrivo = xPos / game.lato;
+
+            game.Muovi();
+        }
+    }
 }

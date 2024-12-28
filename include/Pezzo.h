@@ -8,23 +8,15 @@
 #include <glad/glad.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+#include <memory>
 
 class Giocatore;
-
-enum class TipologiaPezzo{
-    PEDONE,
-    TORRE,
-    CAVALLO,
-    ALFIERE,
-    REGINA,
-    RE
-};
+class Scacchiera;
 
 class Pezzo{
 
     private:
         const int valore;
-        Giocatore *giocatore;
         unsigned int quadVAO;
 
     public:
@@ -33,6 +25,9 @@ class Pezzo{
 
         int riga;
         int colonna;
+        Giocatore *giocatore;
+
+        virtual bool muoviPezzo(std::unique_ptr<Scacchiera>& scacchiera, int riga, int colonna);
 
     protected:
         Shader shader;

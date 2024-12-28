@@ -6,3 +6,7 @@ Pezzo::Pezzo(Giocatore *giocatore, int valore, int riga, int colonna, Texture2D 
 
 
 }
+
+bool Pezzo::muoviPezzo(std::unique_ptr<Scacchiera> &scacchiera, int riga, int colonna){
+    return false;
+}

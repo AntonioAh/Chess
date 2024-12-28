@@ -21,6 +21,8 @@ class Giocatore{
     public:
         Giocatore(Colore colore);
 
+        Colore getColore();
+
         void aggiungiPezzo(Pezzo *);
 
 

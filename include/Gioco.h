@@ -6,7 +6,7 @@
 
 
 #include "Giocatore.h"
-
+#include "scacchiera.h"
 #include "resource_manager.h"
 
 
@@ -23,9 +23,20 @@ class Gioco{
     public:
         unsigned int Width, Height;
 
+        bool selezionato;
+        int rigaPartenza, colonnaPartenza;
+        int rigaArrivo, colonnaArrivo;
+
+        float lato;
+
         Gioco(unsigned int width, unsigned int height);
         void Init();
         void Render();
+
+        std::unique_ptr<Scacchiera> scacchiera;
+        Giocatore *turno;
+        void Muovi();
+
 };
 
 #endif

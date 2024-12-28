@@ -1,3 +1,6 @@
+#ifndef SCACCHIERA_H
+#define SCACCHIERA_H
+
 #include "shader.h"
 
 #include "Giocatore.h"
@@ -16,7 +19,13 @@ class Scacchiera{
 
         void Render();
 
-        std::vector<std::shared_ptr<Pezzo>> pezzi;
+        float lato;
+
+        std::unique_ptr<Giocatore> bianco;
+        std::unique_ptr<Giocatore> nero;
+
+        std::shared_ptr<Pezzo>& getPezzo(int riga, int colonna);
+        std::vector<std::shared_ptr<Pezzo>>& getAllPieces();
 
     private:
         unsigned int lato_schermo;
@@ -24,8 +33,10 @@ class Scacchiera{
         Shader shader;
         float *vertices;
 
-        std::unique_ptr<Giocatore> bianco;
-        std::unique_ptr<Giocatore> nero;
+        std::vector<std::shared_ptr<Pezzo>> pezzi;
+
 
         void aggiungiPezzi();
 };
+
+#endif

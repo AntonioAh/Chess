@@ -1270,4 +1270,5 @@ CMakeFiles/Scacchi.dir/src/main.cpp.o: \
   /opt/homebrew/include/glm/gtc/../mat4x4.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
   /opt/homebrew/include/glm/gtc/matrix_transform.hpp \
+  /Users/antonio/Desktop/Scacchi/include/scacchiera.h \
   /opt/homebrew/include/GLFW/glfw3.h

@@ -91,7 +91,7 @@ Texture2D ResourceManager::loadTextureFromFile(const char *file, bool alpha){
     }
 
     int width, height, nrChannels;
-    unsigned char *data = stbi_load(file, &width, &height, &nrChannels, 0);
+    unsigned char *data =  stbi_load(file, &width, &height, &nrChannels, alpha ? 4 : 3);
 
     texture.Generate(width, height, data);
 

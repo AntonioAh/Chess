@@ -9,12 +9,10 @@
 #include "stb_image.h"
 
 #include "sprite_renderer.h"
-#include "scacchiera.h"
 
 #include <algorithm>
 
 SpriteRenderer *Renderer;
-Scacchiera *scacchiera;
 
 Gioco::Gioco(unsigned int width, unsigned int height) : Width(width), Height(height) {
 
@@ -59,6 +57,9 @@ Gioco::Gioco(unsigned int width, unsigned int height) : Width(width), Height(hei
 
 
 void Gioco::Init(){
+    selezionato = false;
+    lato = Width / 8.0f;
+
     ResourceManager::LoadShader("../src/sprite.vs", "../src/sprite.fs", nullptr, "sprite");
     ResourceManager::LoadShader("../src/scacchiera.vs", "../src/scacchiera.fs", nullptr, "scacchiera");
 
@@ -68,17 +69,34 @@ void Gioco::Init(){
     ResourceManager::GetShader("sprite").SetMatrix4("projection", projection);
 
     ResourceManager::LoadTexture("../resources/board.jpg", false, "pedone");
+    ResourceManager::LoadTexture("../resources/torre_bianca senza sfondo.png", true, "torre_bianca");
+   // ResourceManager::LoadTexture("../resources/torre_nera.jpg", false, "torre_nera");
 
     Renderer = new SpriteRenderer(ResourceManager::GetShader("sprite"));
-    scacchiera = new Scacchiera(ResourceManager::GetShader("scacchiera"), Width);
+    scacchiera = std::make_unique<Scacchiera>(ResourceManager::GetShader("scacchiera"), Width);
+    turno = scacchiera->bianco.get();
 }
 
 void Gioco::Render(){    
     scacchiera->Render();
 
-    for (auto &p : scacchiera->pezzi){
+    for (auto &p : scacchiera->getAllPieces()){
         if (p.get()){
             Renderer->DrawSprite(p.get()->texture, glm::vec2(p.get()->colonna * 100, p.get()->riga * 100), glm::vec2(100, 100));
         }
     }
+}
+
+void Gioco::Muovi(){
+    Pezzo *partenza = scacchiera->getPezzo(rigaPartenza, colonnaPartenza).get();
+   // Pezzo *arrivo = scacchiera->pezzi[rigaArrivo * 8 + colonnaArrivo].get();
+
+    if (partenza == nullptr || partenza->giocatore != turno){
+        return ;
+    }
+
+    bool valido = partenza->muoviPezzo(scacchiera, rigaArrivo, colonnaArrivo);
+
+    int a = 0;
+
 }
